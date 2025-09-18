@@ -9,7 +9,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int _selectedBottomNavIndex = 0;
+  int _selectedBottomNavIndex = 1;
   Widget? currentPage;
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   void onTappedItem(int index) =>

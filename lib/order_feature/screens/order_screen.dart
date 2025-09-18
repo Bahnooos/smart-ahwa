@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:smart_ahwa_manager_app/order_feature/data/order_lists.dart';
 import 'package:smart_ahwa_manager_app/order_feature/data/order_model.dart';
 import 'package:smart_ahwa_manager_app/order_feature/screens/order_details_screen.dart';
-import 'package:smart_ahwa_manager_app/report/screen/report_screen.dart';
 
 class OrderScreen extends StatefulWidget {
   const OrderScreen({super.key});
@@ -28,6 +27,10 @@ class _OrderScreenState extends State<OrderScreen> {
           padding: EdgeInsets.all(8.0),
           child: Column(
             children: [
+              SizedBox(height: 30),
+              Text('Add Order', style: TextStyle(fontSize: 24)),
+              SizedBox(height: 30),
+
               TextField(
                 controller: _nameController,
                 decoration: InputDecoration(
@@ -81,10 +84,9 @@ class _OrderScreenState extends State<OrderScreen> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) =>
-                          OrderDetailsScreen(),
+                      builder: (context) => OrderDetailsScreen(),
                     ),
-                  );
+                  ).then((_) => setState(() {}));
                 },
                 style: ButtonStyle(
                   minimumSize: WidgetStatePropertyAll(

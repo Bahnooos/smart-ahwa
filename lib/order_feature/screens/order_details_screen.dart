@@ -3,9 +3,14 @@ import 'package:smart_ahwa_manager_app/order_feature/data/order_lists.dart';
 import 'package:smart_ahwa_manager_app/order_feature/screens/widgets/details_widget.dart';
 import 'package:smart_ahwa_manager_app/report/screen/report_screen.dart';
 
-class OrderDetailsScreen extends StatelessWidget {
+class OrderDetailsScreen extends StatefulWidget {
   const OrderDetailsScreen({super.key});
 
+  @override
+  State<OrderDetailsScreen> createState() => _OrderDetailsScreenState();
+}
+
+class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,9 +40,10 @@ class OrderDetailsScreen extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => ReportScreen(orderModel: orders.last),
+                  builder: (context) => ReportScreen(),
                 ),
               );
+             
             },
             style: ButtonStyle(
               minimumSize: WidgetStatePropertyAll(Size(double.infinity, 50)),
