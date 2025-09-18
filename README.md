@@ -15,23 +15,31 @@ Smart Ahwa is a modern, smart cafe management system designed to streamline oper
 
 1. **Add Order**: Users can add a new order by entering the customer name, selecting a product, and adding any special instructions.
 
- Add Order                                  
+Add Order                                  
 
 <img width="375" height="812" alt="Screenshot_20250918-165336" src="https://github.com/user-attachments/assets/d2870574-a077-49c1-a3a4-05b7efe5e43a" />
 
+**-------------------------------------------------------------------------------------------**
+ 
 2. **Pending Orders Dashboard**: Displays all pending orders, making it easy for staff to track and manage.
 
 Pending Orders Dashboard                   
 <img width="375" height="812" alt="Screenshot_20250918-165344" src="https://github.com/user-attachments/assets/405acc2d-ce95-49df-ab88-f5e34bf4f079" />
 
+**-------------------------------------------------------------------------------------------**
+
+
 3. **Order Details**: Shows the details of a selected order, with an option to mark the order as completed.
 
-| Order Details                             
+Order Details                             
 <img width="375" height="812" alt="Screenshot_20250918-165353" src="https://github.com/user-attachments/assets/b25a854d-bb23-497d-9634-d54a33d1bbf5" />
+
+**-------------------------------------------------------------------------------------------**
+
 
 4. **Report**: Provides summary analytics such as the total number of orders and the top-ordered drink.
 
- Report                                     
+Report                                     
 <img width="375" height="812" alt="Screenshot_20250918-165402" src="https://github.com/user-attachments/assets/6135f960-c901-401d-affd-3a529340da66" />
 
 ### Screen Descriptions
@@ -99,7 +107,6 @@ This project intentionally applies Object-Oriented Programming (OOP) and SOLID p
    flutter run
    ```
 
-> Adjust above commands if you have backend or other setup steps.
 
 ## Project Structure
 
@@ -129,3 +136,4 @@ smart-ahwa/
 ---
 
 Feel free to open issues or suggestions to help us improve Smart Ahwa!
+
